@@ -5,9 +5,21 @@ window.onload=function(){
     firebase.initializeApp(config);
     firebaseDB = firebase.database();
     messageDB = firebaseDB.ref().child('message');
-        
+    var divMessage = document.getElementById('message-container');
+    divMessage.innerHTML = ''
     messageDB.on('value', changeFunction => {
-        var message = changeFunction.val();
+        var messages = changeFunction.val();
+        for(messageId in messages){
+            var message = messages[messageId];
+            var divMessageText = '<div class="message">'
+            +'<img src="'+message.userImage+'"'
+            +'    alt="Avatar" style="width:100%;">'
+            +'<h3>'+message.username+'</h3>'
+            +'<p>'+message.message+'</p>'
+            +'<span class="time-right">'+message.date+'</span>'
+            +'</div>'
+            divMessage.innerHTML +=divMessageText;
+        }
         console.log (message)
     });
 }
@@ -17,12 +29,13 @@ function sendMessage(){
     var username = document.forms[0].uname.value
     var userImage = document.forms[0].userImage.value
     var message = document.forms[0].message.value
-    
-    
-    firebaseDB.ref('message/' + username).set({
+    var date = (new Date()).toString()
+    debugger
+    firebaseDB.ref('message/').push({
         username,
         userImage,
-        message
+        message,
+        date: date 
     });
     console.log(username)
     console.log(userImage)
