@@ -2,73 +2,76 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-  <h2>Chat Messages</h2>
+    <h2>Chat Messages</h2>
+    <div class="message-container">
+        <div class="message">
+            <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
+                alt="Avatar" style="width:100%;">
+            <p>Hello. How are you today?</p>
+            <span class="time-right">11:00</span>
+        </div>
 
-  <div class="message">
-    <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
-      alt="Avatar" style="width:100%;">
-    <p>Hello. How are you today?</p>
-    <span class="time-right">11:00</span>
-  </div>
+        <div class="message darker">
+            <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
+                alt="Avatar" class="right" style="width:100%;">
+            <p>Hey! I'm fine. Thanks for asking!</p>
+            <span class="time-left">11:01</span>
+        </div>
 
-  <div class="message darker">
-    <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
-      alt="Avatar" class="right" style="width:100%;">
-    <p>Hey! I'm fine. Thanks for asking!</p>
-    <span class="time-left">11:01</span>
-  </div>
+        <div class="message">
+            <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
+                alt="Avatar" style="width:100%;">
+            <p>Sweet! So, what do you wanna do today?</p>
+            <span class="time-right">11:02</span>
+        </div>
 
-  <div class="message">
-    <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
-      alt="Avatar" style="width:100%;">
-    <p>Sweet! So, what do you wanna do today?</p>
-    <span class="time-right">11:02</span>
-  </div>
+        <div class="message darker">
+            <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
+                alt="Avatar" style="width:100%;">
+            <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+            <span class="time-left">11:05</span>
+        </div>
+        <div class="message">
+            <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
+                alt="Avatar" style="width:100%;">
+            <p>Sweet! So, what do you wanna do today?</p>
+            <span class="time-right">11:02</span>
+        </div>
 
-  <div class="message darker">
-    <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
-      alt="Avatar" style="width:100%;">
-    <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-    <span class="time-left">11:05</span>
-  </div>
-  <div class="message">
-    <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
-      alt="Avatar" style="width:100%;">
-    <p>Sweet! So, what do you wanna do today?</p>
-    <span class="time-right">11:02</span>
-  </div>
-
-  <div class="message darker">
-    <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
-      alt="Avatar" style="width:100%;">
-    <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-    <span class="time-left">11:05</span>
-  </div>
-  <form action="sendMessage()">
-
-    <div class="container">
-      <label for="uname">
-        <b>Username</b>
-      </label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-      <label for="userImage">
-        <b>User Image</b>
-      </label>
-      <input type="text" placeholder="Enter image url" name="userImage" required>
-      <label for="message">
-        <b>Message</b>
-      </label>
-      <textarea type="text" placeholder="Enter message" name="message" required></textarea>
-      <button type="submit">Send</button>
+        <div class="message darker">
+            <img src="https://scontent.fpet3-1.fna.fbcdn.net/v/t1.0-9/10945553_801112266608997_5175750715082872322_n.jpg?_nc_cat=104&oh=f5d680c0bc6e3a28013b112d14b55058&oe=5C5C2105"
+                alt="Avatar" style="width:100%;">
+            <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+            <span class="time-left">11:05</span>
+        </div>
     </div>
-  </form>
+    <form onsubmit="sendMessage()">
 
+        <div class="container">
+            <label for="uname">
+                <b>Username</b>
+            </label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="userImage">
+                <b>User Image</b>
+            </label>
+            <input type="text" placeholder="Enter image url" name="userImage" required>
+            <label for="message">
+                <b>Message</b>
+            </label>
+            <textarea type="text" placeholder="Enter message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="./index.js"></script>
+    <script src="./config.js"></script>
 </body>
 
 </html>
