@@ -18,7 +18,7 @@ window.onload=function(){
             +'<p>'+message.message+'</p>'
             +'<span class="time-right">'+message.date+'</span>'
             +'</div>'
-            divMessage.innerHTML +=divMessageText;
+            divMessage.innerHTML = divMessageText+divMessage.innerHTML;
         }
         console.log (message)
     });
